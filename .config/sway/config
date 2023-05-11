@@ -1,0 +1,16 @@
+## Variables
+set $Alt Mod1
+set $Super Mod4
+
+default_border pixel 2
+default_floating_border pixel 2
+
+bar {
+	position top
+	swaybar_command waybar
+}
+
+include ./io
+include ./bindings
+
+include /etc/sway/config.d/*
