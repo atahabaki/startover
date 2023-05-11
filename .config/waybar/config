@@ -1,5 +1,8 @@
 {
-	"margin": 5,
+	"margin-top": 10,
+	"margin-left": 8,
+	"margin-bottom": 0,
+	"margin-right": 8,
 	"modules-left": [ "sway/workspaces", "sway/scratchpad", ],
 	"modules-center": [ "backlight", "clock#1", "clock#2", "clock#3", "battery" ],
 	"modules-right": [ "pulseaudio", "network", "cpu", "memory", "temperature" ],
