@@ -25,6 +25,7 @@ floating_modifier $Super normal
 bindsym $Super+Shift+r reload
 bindsym $Super+Shift+q kill
 bindsym $Super+Shift+e exec swaynag -t warning -m 'Really, want to end the session?' -B 'Yeah' 'swaymsg exit'
+bindsym $Super+Shift+l exec swaylock -i ~/Pictures/Wallpapers/G14_wallpaper_3840x2160.jpg
 
 #### Getting Around
 # Changing focus
