@@ -2,15 +2,28 @@
 set $Alt Mod1
 set $Super Mod4
 
-default_border pixel 2
-default_floating_border pixel 2
+include ./io
+include ./bindings
+include ./catppuccin/themes/catppuccin-mocha
+
+
+default_border pixel 3
+default_floating_border pixel 3
 
 bar {
 	position top
 	swaybar_command waybar
 }
 
-include ./io
-include ./bindings
+gaps inner 8
+gaps outer 4
+
+# target                 title     bg    text   indicator  border
+client.focused           $pink     $base $text  $rosewater $red
+client.focused_inactive  $mauve    $base $text  $rosewater $maroon
+client.unfocused         $mauve    $base $text  $rosewater $overlay0
+client.urgent            $peach    $base $peach $overlay0  $peach
+client.placeholder       $overlay0 $base $text  $overlay0  $overlay0
+client.background        $base
 
 include /etc/sway/config.d/*
