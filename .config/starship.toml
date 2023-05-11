@@ -1,6 +1,6 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
-format = """[╭─](bold surface0)[](fg:crust)$hostname\
+format = """[╭](bold surface0)[](fg:crust)$hostname\
 [](fg:crust bg:red)$directory\
 [](fg:red bg:maroon)[$git_branch $git_status](bg:maroon)\
 [](fg:maroon bg:peach)\
@@ -10,9 +10,10 @@ $kotlin\
 [](fg:sky)$battery\
 [](fg:sky bg:sapphire)$time\
 [](fg:sapphire)
-[╰─](bold surface0)$character"""
+[╰](bold surface0)$character"""
 palette = 'catppuccin_mocha'
 add_newline = true
+continuation_prompt = "[╰─ ](bold surface0)"
 
 [hostname]
 ssh_only = false
