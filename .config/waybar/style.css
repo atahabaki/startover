@@ -1,0 +1,133 @@
+@import "catppuccin/themes/macchiato.css";
+
+* {
+	/*font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;*/
+	font-family: CaskaydiaCove Nerd Font, FontAwesome, Roboto;
+	font-size: 12px;
+}
+
+window#waybar {
+	background-color: rgba(0,0,0,0);
+}
+
+#workspaces,
+#backlight,
+#clock.3,
+#pulseaudio,
+#network,
+#cpu,
+#memory {
+	margin-right: 10px;
+}
+
+#scratchpad,
+#backlight,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#cpu,
+#memory,
+#temperature {
+	color: @crust;
+	padding: 0 16px;
+	border-radius: 8px;
+}
+
+#workspaces button {
+	background-color: @overlay0;
+	color: @text;
+	padding: 0 4px;
+	margin: 0 5px;
+	border-radius: 50%;
+	transition: .3s all ease-in-out;
+}
+
+#workspaces > button {
+	margin-left: 0;
+}
+
+#workspaces button.focused,
+#workspaces button.active,
+#workspaces button:hover {
+	background-color: @crust;
+	border-radius: 0;
+	color: @red;
+	box-shadow: inset 0 -3px @red;
+}
+
+#workspaces button.urgent {
+	background-color: @red;
+	color: @crust;
+	border-radius: 0;
+	box-shadow: inset 0 -3px @red;
+}
+
+#scratchpad {
+	background-color: @red;
+	box-shadow: inset 0 -3px @crust;
+}
+
+#backlight {
+	color: @mantle;
+	background-color: @teal;
+}
+
+#clock {
+	color: @blue;
+	background-color: @base;
+	font-weight: 600;
+	border-radius: 0;
+}
+
+#clock.1 {
+	border-radius: 8px 0 0 8px;
+	padding-left: 20px;
+}
+
+#clock.2 {
+	color: @crust;
+	background-color: @blue;
+	box-shadow: inset 0 -3px @crust;
+	font-weight: 800;
+}
+
+#clock.3 {
+	border-radius: 0 8px 8px 0;
+	padding-right: 20px;
+}
+
+#cpu,
+#memory {
+	background-color: @surface0;
+	color: @text;
+}
+
+#battery.charging,
+#network.ethernet,
+#network.wifi {
+	background-color: @green;
+}
+
+#battery.discharging,
+#network.disconnected,
+#temperature {
+	background-color: @yellow;
+}
+
+#battery.warning {
+	background-color: @peach;
+}
+
+#battery.critical,
+#pulseaudio.muted,
+#pulseaudio.source-muted,
+#network.disabled,
+#temperature.critical {
+	background-color: @red;
+}
+
+#pulseaudio.bluetooth {
+	color: @crust;
+	background-color: @red;
+}
