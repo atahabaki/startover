@@ -128,7 +128,10 @@ window#waybar {
 	background-color: @red;
 }
 
+#pulseaudio {
+	background-color: @mauve;
+}
+
 #pulseaudio.bluetooth {
-	color: @crust;
-	background-color: @red;
+	background-color: @blue;
 }
