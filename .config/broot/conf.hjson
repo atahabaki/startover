@@ -1,0 +1,56 @@
+# default_flags:
+
+# chrono format
+date_time_format: %y.%m.%d %H.%M:%S
+
+# modal: true
+
+show_selection_mark: true
+
+cols_order: [
+    mark
+    size
+    permission
+    date
+    git
+    count
+    branch
+    name
+]
+
+# true_colors: false
+# icon_theme: vscode
+
+# special_paths: {
+# }
+
+# quit_on_last_cancel: true
+
+# search_modes: {
+#     <empty>: fuzzy name
+#     /: regex name
+# }
+
+# ext_colors: {
+#     png: rgb(255, 128, 75)
+#     rs: yellow
+# }
+
+content_search_max_file_size: 10MB
+
+# max_panels_count: 2
+
+imports: [
+    verbs.hjson
+    {
+        luma: [
+            dark
+            unknown
+        ]
+        file: dark-gruvbox.hjson
+    }
+    {
+        luma: light
+        file: white-skin.hjson
+    }
+]
