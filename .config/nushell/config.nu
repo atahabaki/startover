@@ -17,3 +17,6 @@ let-env config = {
 		algorithm: fuzzy
 	}
 }
+
+source ~/.config/broot/launcher/nushell/br
+source ~/.config/nushell/alias.nu
