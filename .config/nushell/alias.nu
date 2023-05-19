@@ -1,5 +1,5 @@
 alias l = br --sort-by-type-dirs-first -dpsh -c :pt
-alias r = cat
+alias r = bat
 alias v = nvim
 alias sv = sudo nvim
 
