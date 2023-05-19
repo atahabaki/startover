@@ -63,6 +63,8 @@ let-env PROMPT_COMMAND_RIGHT = { ||
 }
 
 
-## EDITOR ##
+## USER ##
 
 let-env EDITOR = /usr/bin/nvim
+let-env PAGER = /usr/bin/bat
+let-env BAT_THEME = Catppuccin-mocha
