@@ -1,4 +1,4 @@
-# default_flags:
+default_flags: dpsh
 
 # chrono format
 date_time_format: %y.%m.%d %H.%M:%S
