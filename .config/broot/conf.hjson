@@ -47,7 +47,7 @@ imports: [
             dark
             unknown
         ]
-        file: dark-gruvbox.hjson
+        file: catppuccin-mocha.hjson
     }
     {
         luma: light
