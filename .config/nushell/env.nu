@@ -65,6 +65,7 @@ let-env PROMPT_COMMAND_RIGHT = { ||
 
 ## USER ##
 
+let-env PATH = ($env.PATH | split row (char esep) | append $"($env.HOME)/Android/Sdk/platform-tools")
 let-env EDITOR = /usr/bin/nvim
 let-env PAGER = /usr/bin/bat
 let-env BAT_THEME = Catppuccin-mocha
