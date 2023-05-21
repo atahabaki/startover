@@ -1,4 +1,5 @@
-# Created by A. Taha Baki
+# Created by A. Taha Baki <atahabaki@pm.me>
+# Based on the built-in gruvbox theme.
 
 skin: {
     input: rgb(205, 214, 244) none
@@ -53,9 +54,9 @@ skin: {
 #
 ### MATCH
 #
-    char_match: rgb(205, 214, 244) rgb(243, 139, 168)
-    content_match: rgb(205, 214, 244) rgb(243, 139, 168)
-    preview_match: rgb(205, 214, 244) rgb(243, 139, 168)
+    char_match: rgb(249, 226, 175) rgb(69, 71, 90) Bold Italic
+    content_match: rgb(249, 226, 175) rgb(69, 71, 90) Bold Italic
+    preview_match: rgb(249, 226, 175) rgb(69, 71, 90) Bold Italic
 
     # children count
     # fg:$yellow bg:none
@@ -144,4 +145,17 @@ skin: {
     scrollbar_track: rgb(49, 50, 68) none
     # fg:$surface1
     scrollbar_thumb: rgb(88, 91, 112) none
+#
+### GOODTOBAD
+#
+    good_to_bad_0: rgb(166, 227, 161) none
+    good_to_bad_1: rgb(148, 226, 213) none
+    good_to_bad_2: rgb(137, 220, 235) none
+    good_to_bad_3: rgb(116, 199, 236) none
+    good_to_bad_4: rgb(137, 180, 250) none
+    good_to_bad_5: rgb(180, 190, 254) none
+    good_to_bad_6: rgb(203, 166, 247) none
+    good_to_bad_7: rgb(250, 179, 135) none
+    good_to_bad_8: rgb(235, 160, 172) none
+    good_to_bad_9: rgb(243, 139, 168) none
 }
