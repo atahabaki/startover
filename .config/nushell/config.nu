@@ -20,3 +20,4 @@ let-env config = {
 
 source ~/.config/broot/launcher/nushell/br
 source ~/.config/nushell/alias.nu
+source ~/.config/nushell/zoxide.nu
