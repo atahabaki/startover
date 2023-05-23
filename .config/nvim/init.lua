@@ -1,0 +1,8 @@
+require "core.options"
+require "core.keymaps"
+require "core.colorscheme"
+require "pluginßetup"
+require "plugins.cmp"
+require "plugins.lualine"
+require "plugins.lsp.mason"
+require "plugins.lsp.config"
