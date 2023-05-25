@@ -55,6 +55,11 @@ return packer.startup(function(use)
     "neovim/nvim-lspconfig",
 		run = ":MasonUpdate" -- :MasonUpdate updates registry contents
 	}
+	-- treesitter
+	use {
+		"nvim-treesitter/nvim-treesitter",
+		run = ":TSUpdate"
+	}
 	-- after the packages.
 	if packer_bootstrap then
     require('packer').sync()
