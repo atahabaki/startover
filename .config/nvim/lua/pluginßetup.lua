@@ -55,6 +55,8 @@ return packer.startup(function(use)
     "neovim/nvim-lspconfig",
 		run = ":MasonUpdate" -- :MasonUpdate updates registry contents
 	}
+	-- rust tools
+	use 'simrat39/rust-tools.nvim'
 	-- treesitter
 	use {
 		"nvim-treesitter/nvim-treesitter",

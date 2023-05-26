@@ -116,3 +116,24 @@ lspconfig["rust_analyzer"].setup {
 	capabilities = capabilities,
 	on_attach = on_attach
 }
+
+local s_rt, rt = pcall(require,"rust-tools")
+if not s_rt then
+	return
+end
+
+rt.setup({
+	tools = {
+		inlay_hints = {
+			auto = true
+		}
+	},
+	server = {
+		on_attach = function (c,b)
+			on_attach(c,b)
+			local o = {noremap = true, silent = true}
+			vim.api.nvim_buf_set_keymap(b, "n", "<leader>ha", rt.hover_actions.hover_actions, o)
+			vim.api.nvim_buf_set_keymap(b, "n", "<leader>a", rt.code_action_group.code_action_group, o)
+		end,
+	}
+})
