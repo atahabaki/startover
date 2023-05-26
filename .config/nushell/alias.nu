@@ -16,3 +16,4 @@ alias prmx = sudo pacman -Rns (pacman -Qtdq | str replace -a '\n' ' ' | split ro
 alias pfly = sudo pacman -Fy
 
 alias g = git
+alias glp = git log --date=relative --graph --decorate --all --pretty=format:"%C(#eba0ac)%h %C(#a6adc8)%cd %C(#f9e2af)[%cn] %C(#cba6f7)%s%C(#f38ba8)%d%Creset"
