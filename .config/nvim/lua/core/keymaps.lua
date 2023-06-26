@@ -52,3 +52,7 @@ k.set("x", "J", ":move '>+1<CR>gv-gv", o)
 k.set("x", "K", ":move '<-2<CR>gv-gv", o)
 k.set("x", "<A-j>", ":move '>+1<CR>gv-gv", o)
 k.set("x", "<A-k>", ":move '<-2<CR>gv-gv", o)
+
+-- Telescope
+k.set("n", "<leader>ff", ":Telescope find_files<CR>")
+k.set("n", "<leader>fg", ":Telescope live_grep<CR>")
