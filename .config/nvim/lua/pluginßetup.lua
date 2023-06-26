@@ -75,6 +75,8 @@ return packer.startup(function(use)
 	use 'windwp/nvim-autopairs'
 	-- comments
 	use 'numToStr/Comment.nvim'
+	-- git
+	use 'lewis6991/gitsigns.nvim'
 	-- after the packages.
 	if packer_bootstrap then
     require('packer').sync()
