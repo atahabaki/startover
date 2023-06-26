@@ -71,6 +71,8 @@ return packer.startup(function(use)
 			{'nvim-treesitter/nvim-treesitter', opt = true}
 		}
 	}
+	-- autopairs
+	use 'windwp/nvim-autopairs'
 	-- after the packages.
 	if packer_bootstrap then
     require('packer').sync()
