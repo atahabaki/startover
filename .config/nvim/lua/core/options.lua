@@ -51,7 +51,7 @@ o.writebackup = false
 o.undofile = true
 
 -- completion
-o.updatetime = 400 -- in ms. 4000ms.
+o.updatetime = 300 -- in ms. 4000ms.
 o.completeopt = "menuone,noselect"
 
 -- encoding
