@@ -73,6 +73,8 @@ return packer.startup(function(use)
 	}
 	-- autopairs
 	use 'windwp/nvim-autopairs'
+	-- comments
+	use 'numToStr/Comment.nvim'
 	-- after the packages.
 	if packer_bootstrap then
     require('packer').sync()
