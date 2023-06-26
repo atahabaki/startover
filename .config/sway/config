@@ -5,7 +5,7 @@ set $Super Mod4
 include ./io
 include ./bindings
 include ./catppuccin/themes/catppuccin-mocha
-
+include ./startup
 
 default_border pixel 3
 default_floating_border pixel 3
