@@ -77,6 +77,8 @@ return packer.startup(function(use)
 	use 'numToStr/Comment.nvim'
 	-- git
 	use 'lewis6991/gitsigns.nvim'
+	-- justfiles
+	use 'NoahTheDuke/vim-just'
 	-- after the packages.
 	if packer_bootstrap then
     require('packer').sync()
