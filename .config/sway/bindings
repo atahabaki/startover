@@ -17,8 +17,8 @@ bindsym --locked XF86TouchpadToggle input type:touchpad events toggle enabled di
 bindsym $Super+Return exec kitty
 # Menu
 bindsym $Super+d exec rofi -show run
+bindsym $Super+Period exec rofi -show emoji
 bindsym $Super+Shift+d exec rofi -show drun
-bindsym Mod1+Space exec rofi -show run
 
 ### Sway Bindings
 floating_modifier $Super normal
