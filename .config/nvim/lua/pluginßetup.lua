@@ -79,6 +79,11 @@ return packer.startup(function(use)
 	use 'lewis6991/gitsigns.nvim'
 	-- justfiles
 	use 'NoahTheDuke/vim-just'
+	-- todos
+	use {
+	  "AmeerTaweel/todo.nvim",
+    requires = "nvim-lua/plenary.nvim"
+  }
 	-- after the packages.
 	if packer_bootstrap then
     require('packer').sync()
