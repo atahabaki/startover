@@ -15,6 +15,10 @@ bindsym --locked XF86TouchpadToggle input type:touchpad events toggle enabled di
 ### Programs
 # Terminal
 bindsym $Super+Return exec kitty
+# Screenshot
+bindsym $Super+Print exec /usr/bin/nu -c '^mkdir -p $"($env.HOME)/Pictures/Screenshots/"; /usr/share/sway/scripts/grimshot save screen $"($env.HOME)/Pictures/Screenshots/Screenshot_(date now | date format "%C%m%d_%H.%M:%S_%s").png"'
+bindsym $Super+Shift+Print exec /usr/bin/nu -c '^mkdir -p $"($env.HOME)/Pictures/Screenshots/"; /usr/share/sway/scripts/grimshot save active $"($env.HOME)/Pictures/Screenshots/Screenshot_(date now | date format "%C%m%d_%H.%M:%S_%s").png"'
+bindsym $Super+Control+Print exec /usr/bin/nu -c '^mkdir -p $"($env.HOME)/Pictures/Screenshots/"; /usr/share/sway/scripts/grimshot save area $"($env.HOME)/Pictures/Screenshots/Screenshot_(date now | date format "%C%m%d_%H.%M:%S_%s").png"'
 # Menu
 bindsym $Super+d exec rofi -show run
 bindsym $Super+Period exec rofi -show emoji
